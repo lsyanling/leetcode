@@ -15,13 +15,13 @@ int main() {
 	//	print("{0}", result);
 	//}
 
-	// 29两数相除
-	{
-		Solution29 solution;
-		int dividend = 2147483647;
-		int divisor = 3;
-		auto result = solution.divide(dividend, divisor);
-		print("{0}", result);
-	}
+	//// 29两数相除
+	//{
+	//	Solution29 solution;
+	//	int dividend = 2147483647;
+	//	int divisor = 3;
+	//	auto result = solution.divide(dividend, divisor);
+	//	print("{0}", result);
+	//}
 
 }
