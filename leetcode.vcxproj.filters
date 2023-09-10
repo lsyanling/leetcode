@@ -29,5 +29,8 @@
     <ClInclude Include="headfiles\29两数相除.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\30串联所有单词的子串.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

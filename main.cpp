@@ -24,4 +24,15 @@ int main() {
 	//	print("{0}", result);
 	//}
 
+	//// 30БЅКэПаіэ
+	//{
+	//	Solution30 solution;
+	//	string s = "wordgoodgoodgoodbestword";
+	//	vector<string> words = { "word","good","best","good" };
+	//	auto results = solution.findSubstring(s, words);
+	//	for (const auto& result : results) {
+	//		print("{0} ", result);
+	//	}
+	//}
+
 }
