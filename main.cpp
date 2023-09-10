@@ -24,7 +24,7 @@ int main() {
 	//	print("{0}", result);
 	//}
 
-	//// 30两数相除
+	//// 30串联所有单词的子串
 	//{
 	//	Solution30 solution;
 	//	string s = "wordgoodgoodgoodbestword";
@@ -33,6 +33,15 @@ int main() {
 	//	for (const auto& result : results) {
 	//		print("{0} ", result);
 	//	}
+	//}
+
+	//// 33搜索旋转排序数组
+	//{
+	//	Solution33 solution;
+	//	vector<int> nums = { 3,4,5,6,1,2 };
+	//	int target = 2;
+	//	auto result = solution.search(nums, target);
+	//	print("{0}", result);
 	//}
 
 }

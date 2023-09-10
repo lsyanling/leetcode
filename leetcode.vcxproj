@@ -135,6 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headfiles\33搜索旋转排序数组.h" />
     <ClInclude Include="headfiles\30串联所有单词的子串.h" />
     <ClInclude Include="headfiles\head.h" />
     <ClInclude Include="headfiles\29两数相除.h" />
