@@ -44,4 +44,18 @@ int main() {
 	//	print("{0}", result);
 	//}
 
+	//// 39组合总和
+	//{
+	//	Solution39 solution;
+	//	vector<int> nums = { 2,3,6,7 };
+	//	int target = 7;
+	//	auto results = solution.combinationSum(nums, target);
+	//	println("{0}", results.size());
+	//	for (const auto& result : results) {
+	//		for (const auto& factor : result)
+	//			print("{0} ", factor);
+	//		println("");
+	//	}
+	//}
+
 }
