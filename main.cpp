@@ -38,8 +38,8 @@ int main() {
 	//// 33搜索旋转排序数组
 	//{
 	//	Solution33 solution;
-	//	vector<int> nums = { 3,4,5,6,1,2 };
-	//	int target = 2;
+	//	vector<int> nums = { 4,5,6,7,0,1,2 };
+	//	int target = 0;
 	//	auto result = solution.search(nums, target);
 	//	print("{0}", result);
 	//}
@@ -58,18 +58,26 @@ int main() {
 	//	}
 	//}
 
-	// 40组合总和II
-	{
-		Solution40 solution;
-		vector<int> nums = { 2,5,2,1,2 };
-		int target = 5;
-		auto results = solution.combinationSum2(nums, target);
-		println("{0}", results.size());
-		for (const auto& result : results) {
-			for (const auto& factor : result)
-				print("{0} ", factor);
-			println("");
-		}
-	}
+	//// 40组合总和II
+	//{
+	//	Solution40 solution;
+	//	vector<int> nums = { 2,5,2,1,2 };
+	//	int target = 5;
+	//	auto results = solution.combinationSum2(nums, target);
+	//	println("{0}", results.size());
+	//	for (const auto& result : results) {
+	//		for (const auto& factor : result)
+	//			print("{0} ", factor);
+	//		println("");
+	//	}
+	//}
+
+	//// 41缺失的第一个正数
+	//{
+	//	Solution41 solution;
+	//	vector<int> nums = { 1 };
+	//	auto result = solution.firstMissingPositive(nums);
+	//	println("{0}", result);
+	//}
 
 }

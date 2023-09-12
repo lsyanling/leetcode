@@ -7,9 +7,14 @@ using namespace std;
 class Solution33 {
 public:
 	int search(vector<int>& nums, int target) {
+		return search1(nums, target);
+		return search2(nums, target);
+	}
+
+	int search1(vector<int>& nums, int target) {
 		int n = nums.size();
-		int result = -1;
 		int left = 0, right = n - 1, middle;
+		int result = -1;
 
 		// ²é×îĞ¡ÖµµÄË÷Òı
 		while (left < right)
@@ -42,5 +47,32 @@ public:
 		if (nums[middle] == target)
 			result = middle;
 		return result;
+	}
+
+	int search2(vector<int>& nums, int target) {
+		int n = nums.size();
+		int left = 0, right = n - 1, middle;
+
+		while (left <= right) {
+			middle = (left + right) / 2;
+			if (nums[middle] == target)
+				return middle;
+			// ×ó±ßÂÒĞò£¬ÓÒ±ßË³Ğò
+			if (nums[left] > nums[middle]) {
+				if (nums[middle] <= target && nums[right] >= target)
+					left = middle + 1;
+				else
+					right = middle;
+			}
+			// ÓÒ±ßÂÒĞò£¬×ó±ßË³Ğò
+			else
+			{
+				if (nums[left] <= target && nums[middle] >= target)
+					right = middle;
+				else
+					left = middle + 1;
+			}
+		}
+		return -1;
 	}
 };
