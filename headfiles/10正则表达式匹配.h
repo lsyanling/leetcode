@@ -9,13 +9,13 @@ public:
 	bool isMatch(string s, string p) {
 		int sSize = s.size(), pSize = p.size();
 		// 前si个与前pi个能匹配
-		vector<vector<bool>> dp(sSize + 1, vector<bool>(pSize + 1, false));
+		vector<vector<int>> dp(sSize + 1, vector<int>(pSize + 1, 0));
 
 		dp[0][0] = 1;
 		// 如果s长度为0，只有p长度为偶数且p[2n-1]均为'*'时才可匹配
 		for (int pi = 2; pi < pSize && p[pi - 1] == '*'; pi += 2)
 		{
-			dp[0][pi] = true;
+			dp[0][pi] = 1;
 		}
 		for (int si = 1; si < sSize + 1; si++)
 		{

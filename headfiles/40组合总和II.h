@@ -4,27 +4,29 @@
 import std;
 using namespace std;
 
-class Solution39 {
+class Solution40 {
 public:
-	vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+	vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
 		sort(candidates.begin(), candidates.end());
-		return combinationSumRecursive(candidates, target, 0);
+		return combinationSum2Recursive(candidates, target, 0);
 	}
-	vector<vector<int>> combinationSumRecursive(vector<int>& candidates, int target, int begin) {
+	vector<vector<int>> combinationSum2Recursive(vector<int>& candidates, int target, int begin) {
 		vector<vector<int>> results;
 		// 查找完毕或不可能有解
 		if (begin >= candidates.size() || target < candidates[begin])
 			return {};
-		// 遍历候选数组，减去每个值并递归
 		for (int i = begin; i < candidates.size(); i++)
 		{
+			// 剪枝，候选数组中连续两个值相同，在上一层查过了
+			if (i > begin && candidates[i] == candidates[i - 1])
+				continue;
 			// 得到解
 			if (target == candidates[i]) {
 				results.push_back({ candidates[i] });
 				continue;
 			}
-			// 递归，每个解中插入当前选中的值；剪枝，从第 i 个开始查找，前面的在前一棵子树查过了
-			auto tempResults = combinationSumRecursive(candidates, target - candidates[i], i);
+			// 递归，每个解中插入当前选中的值
+			auto tempResults = combinationSum2Recursive(candidates, target - candidates[i], i + 1);
 			for (auto& tempResult : tempResults)
 				tempResult.push_back(candidates[i]);
 			// 将解合并到results

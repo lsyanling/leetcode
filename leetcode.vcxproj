@@ -135,6 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headfiles\40组合总和II.h" />
     <ClInclude Include="headfiles\39组合总和.h" />
     <ClInclude Include="headfiles\33搜索旋转排序数组.h" />
     <ClInclude Include="headfiles\30串联所有单词的子串.h" />

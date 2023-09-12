@@ -15,14 +15,14 @@ public:
 			intMinHalf += intMinHalf;
 		}
 
-		bool changeSign = false;
+		bool signReversal = false;
 		if (dividend > 0) {
 			dividend = -dividend;
-			changeSign = !changeSign;
+			signReversal = !signReversal;
 		}
 		if (divisor > 0) {
 			divisor = -divisor;
-			changeSign = !changeSign;
+			signReversal = !signReversal;
 		}
 		// 被除数为0或被除数(负)大于除数(负)，商为0
 		if (dividend == 0 || dividend > divisor)
@@ -51,7 +51,7 @@ public:
 			tempDivisor = divisor;
 		}
 		// 变号说明异号，直接返回
-		if (changeSign)
+		if (signReversal)
 		{
 			return quotient;
 		}

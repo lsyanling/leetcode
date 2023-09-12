@@ -58,4 +58,18 @@ int main() {
 	//	}
 	//}
 
+	// 40组合总和II
+	{
+		Solution40 solution;
+		vector<int> nums = { 2,5,2,1,2 };
+		int target = 5;
+		auto results = solution.combinationSum2(nums, target);
+		println("{0}", results.size());
+		for (const auto& result : results) {
+			for (const auto& factor : result)
+				print("{0} ", factor);
+			println("");
+		}
+	}
+
 }

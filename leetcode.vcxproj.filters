@@ -38,5 +38,8 @@
     <ClInclude Include="headfiles\39组合总和.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\40组合总和II.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
