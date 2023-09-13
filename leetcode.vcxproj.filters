@@ -44,5 +44,8 @@
     <ClInclude Include="headfiles\41缺失的第一个正数.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\42接雨水.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

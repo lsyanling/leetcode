@@ -12,7 +12,7 @@ int main() {
 	//	string s = "mississippi";
 	//	string p = "mis*is*ip*.";
 	//	auto result = solution.isMatch(s, p);
-	//	print("{0}", result);
+	//	print("result = {0}", result);
 	//}
 
 	//// 29两数相除
@@ -21,7 +21,7 @@ int main() {
 	//	int dividend = 2147483647;
 	//	int divisor = 3;
 	//	auto result = solution.divide(dividend, divisor);
-	//	print("{0}", result);
+	//	print("result = {0}", result);
 	//}
 
 	//// 30串联所有单词的子串
@@ -41,7 +41,7 @@ int main() {
 	//	vector<int> nums = { 4,5,6,7,0,1,2 };
 	//	int target = 0;
 	//	auto result = solution.search(nums, target);
-	//	print("{0}", result);
+	//	print("result = {0}", result);
 	//}
 
 	//// 39组合总和
@@ -77,7 +77,15 @@ int main() {
 	//	Solution41 solution;
 	//	vector<int> nums = { 1 };
 	//	auto result = solution.firstMissingPositive(nums);
-	//	println("{0}", result);
+	//	println("result = {0}", result);
+	//}
+
+	//// 42接雨水
+	//{
+	//	Solution42 solution;
+	//	vector<int> height = { 0,1,0,2,1,0,1,3,2,1,2,1 };
+	//	auto result = solution.trap(height);
+	//	println("result = {0}", result);
 	//}
 
 }
