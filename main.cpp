@@ -97,4 +97,13 @@ int main() {
 	//	println("result = {0}", result);
 	//}
 
+	// 44Í¨Åä·ûÆ¥Åä
+	{
+		Solution44 solution;
+		string s = "";
+		string p = "******";
+		auto result = solution.isMatch(s, p);
+		print("result = {0}", result);
+	}
+
 }

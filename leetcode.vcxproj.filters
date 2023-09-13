@@ -50,5 +50,8 @@
     <ClInclude Include="headfiles\43字符串相乘.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\44通配符匹配.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
