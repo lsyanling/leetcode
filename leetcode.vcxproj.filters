@@ -47,5 +47,8 @@
     <ClInclude Include="headfiles\42接雨水.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\43字符串相乘.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

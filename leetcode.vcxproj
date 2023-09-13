@@ -135,6 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headfiles\43字符串相乘.h" />
     <ClInclude Include="headfiles\42接雨水.h" />
     <ClInclude Include="headfiles\41缺失的第一个正数.h" />
     <ClInclude Include="headfiles\40组合总和II.h" />

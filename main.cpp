@@ -88,4 +88,13 @@ int main() {
 	//	println("result = {0}", result);
 	//}
 
+	//// 43×Ö·û´®Ïà³Ë
+	//{
+	//	Solution43 solution;
+	//	string num1 = "123";
+	//	string num2 = "456";
+	//	auto result = solution.multiply(num1, num2);
+	//	println("result = {0}", result);
+	//}
+
 }
