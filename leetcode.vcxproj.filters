@@ -53,5 +53,8 @@
     <ClInclude Include="headfiles\44通配符匹配.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\46全排列.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
