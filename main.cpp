@@ -120,4 +120,21 @@ int main() {
 	//	}
 	//}
 
+	//// 100031计算K置位下标对应元素的和
+	//{
+	//	Solution100031 solution;
+	//	vector<int> nums{ 4,3,2,1 };
+	//	int k = 2;
+	//	auto result = solution.sumIndicesWithKSetBits(nums, k);
+	//	println("100031计算K置位下标对应元素的和 result = {0}", result);
+	//}
+
+	//// 100040让所有学生保持开心的分组方法数
+	//{
+	//	Solution100040 solution;
+	//	vector<int> nums{ 1,1,0,1 };
+	//	auto result = solution.countWays(nums);
+	//	println("100040让所有学生保持开心的分组方法数 result = {0}", result);
+	//}
+
 }

@@ -12,3 +12,5 @@
 #include "43字符串相乘.h"
 #include "44通配符匹配.h"
 #include "46全排列.h"
+#include "100031计算K置位下标对应元素的和.h"
+#include "100040让所有学生保持开心的分组方法数.h"
