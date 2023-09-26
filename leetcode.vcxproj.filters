@@ -62,5 +62,8 @@
     <ClInclude Include="headfiles\100040让所有学生保持开心的分组方法数.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\47全排列II.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -110,7 +110,7 @@ int main() {
 	//// 46全排列
 	//{
 	//	Solution46 solution;
-	//	vector<int> nums{1,2,3};
+	//  vector<int> nums{ 1,2,3 };
 	//	auto results = solution.permute(nums);
 	//	println("46全排列 result.size() = {0}", results.size());
 	//	for (const auto& result : results) {
@@ -119,6 +119,19 @@ int main() {
 	//		println("");
 	//	}
 	//}
+
+	// 47全排列II
+	{
+		Solution47 solution;
+		vector<int> nums{ 0,1,0,0,9 };
+		auto results = solution.permuteUnique(nums);
+		println("47全排列II result.size() = {0}", results.size());
+		for (const auto& result : results) {
+			for (const auto& i : result)
+				print("{0} ", i);
+			println("");
+		}
+	}
 
 	//// 100031计算K置位下标对应元素的和
 	//{
