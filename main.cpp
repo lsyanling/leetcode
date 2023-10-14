@@ -45,6 +45,30 @@ int main() {
 	//	println("33搜索旋转排序数组 result = {0}", result);
 	//}
 
+	// 37解数独
+	{
+		Solution37 solution;
+		vector<vector<char>> board
+		{
+			{'5','3','.','.','7','.','.','.','.'},
+			{'6','.','.','1','9','5','.','.','.'},
+			{'.','9','8','.','.','.','.','6','.'},
+			{'8','.','.','.','6','.','.','.','3'},
+			{'4','.','.','8','.','3','.','.','1'},
+			{'7','.','.','.','2','.','.','.','6'},
+			{'.','6','.','.','.','.','2','8','.'},
+			{'.','.','.','4','1','9','.','.','5'},
+			{'.','.','.','.','8','.','.','7','9'}
+		};
+		solution.solveSudoku(board);
+		println("37解数独");
+		for (const auto& row : board) {
+			for (const auto& item : row)
+				print("{0} ", item);
+			println("");
+		}
+	}
+
 	//// 39组合总和
 	//{
 	//	Solution39 solution;
@@ -120,18 +144,18 @@ int main() {
 	//	}
 	//}
 
-	// 47全排列II
-	{
-		Solution47 solution;
-		vector<int> nums{ 0,1,0,0,9 };
-		auto results = solution.permuteUnique(nums);
-		println("47全排列II result.size() = {0}", results.size());
-		for (const auto& result : results) {
-			for (const auto& i : result)
-				print("{0} ", i);
-			println("");
-		}
-	}
+	//// 47全排列II
+	//{
+	//	Solution47 solution;
+	//	vector<int> nums{ 0,1,0,0,9 };
+	//	auto results = solution.permuteUnique(nums);
+	//	println("47全排列II result.size() = {0}", results.size());
+	//	for (const auto& result : results) {
+	//		for (const auto& i : result)
+	//			print("{0} ", i);
+	//		println("");
+	//	}
+	//}
 
 	//// 100031计算K置位下标对应元素的和
 	//{

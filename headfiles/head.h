@@ -5,6 +5,7 @@
 #include "29两数相除.h"
 #include "30串联所有单词的子串.h"
 #include "33搜索旋转排序数组.h"
+#include "37解数独.h"
 #include "39组合总和.h"
 #include "40组合总和II.h"
 #include "41缺失的第一个正数.h"

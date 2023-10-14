@@ -135,6 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headfiles\37解数独.h" />
     <ClInclude Include="headfiles\47全排列II.h" />
     <ClInclude Include="headfiles\100040让所有学生保持开心的分组方法数.h" />
     <ClInclude Include="headfiles\100031计算K置位下标对应元素的和.h" />
