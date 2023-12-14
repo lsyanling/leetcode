@@ -6,25 +6,25 @@ using namespace std;
 
 class Solution41 {
 public:
-	// ÔÚ³¤¶ÈÎª n µÄÊı×éÖĞ£¬×îĞ¡µÄÕıÕûÊı×î´óÊÇ n + 1
+	// åœ¨é•¿åº¦ä¸º n çš„æ•°ç»„ä¸­ï¼Œæœ€å°çš„æ­£æ•´æ•°æœ€å¤§æ˜¯ n + 1
 	int firstMissingPositive(vector<int>& nums) {
 		int n = nums.size();
-		// È«²¿±ä³ÉÕıÕûÊı
+		// å…¨éƒ¨å˜æˆæ­£æ•´æ•°
 		for (auto& i : nums)
 			if (i <= 0)
 				i = n + 1;
-		// Èç¹û 0 < nums[i] <= n£¬°Ñ nums[nums[i] - 1] ±ê¼ÇÎª¸º
+		// å¦‚æœ 0 < nums[i] <= nï¼ŒæŠŠ nums[nums[i] - 1] æ ‡è®°ä¸ºè´Ÿ
 		for (int i = 0; i < n; i++) {
 			int index = abs(nums[i]);
 			if (index <= n) {
 				nums[index - 1] = -abs(nums[index - 1]);
 			}
 		}
-		// Êı×éÖĞÊ×¸öÕıÊıË÷ÒıÎª i£¬Ôò i + 1 ÊÇÈ±Ê§µÄ×îĞ¡ÕıÕûÊı
+		// æ•°ç»„ä¸­é¦–ä¸ªæ­£æ•°ç´¢å¼•ä¸º iï¼Œåˆ™ i + 1 æ˜¯ç¼ºå¤±çš„æœ€å°æ­£æ•´æ•°
 		for (int i = 0; i < n; i++)
 			if (nums[i] > 0)
 				return i + 1;
-		// Èç¹ûÊı×é²»´æÔÚÕıÊı£¬ËµÃ÷Ô­Êı×é°üº¬ÁË [1, n]
+		// å¦‚æœæ•°ç»„ä¸å­˜åœ¨æ­£æ•°ï¼Œè¯´æ˜åŸæ•°ç»„åŒ…å«äº† [1, n]
 		return n + 1;
 	}
 };

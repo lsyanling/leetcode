@@ -17,17 +17,17 @@ public:
 		string result(n1 + n2, '0');
 		for (int i = n1 - 1; i >= 0; i--) {
 			for (int j = n2 - 1; j >= 0; j--) {
-				// Ò»Î»³ËÒ»Î»
+				// ä¸€ä½ä¹˜ä¸€ä½
 				int temp = multiply(num1[i], num2[j]);
 				string accumulation = intToString(temp);
 				addString(result, accumulation, n1 - 1 - i + n2 - 1 - j);
 			}
 		}
-		// È¥µôÇ°µ¼0
+		// åŽ»æŽ‰å‰å¯¼0
 		auto i = result.rbegin();
 		while (i != result.rend() && *i == '0')
 			i++;
-		// ·´Ïòµü´úÆ÷
+		// åå‘è¿­ä»£å™¨
 		return string(i, result.rend());
 	}
 	int multiply(char c1, char c2) {
@@ -45,11 +45,11 @@ public:
 		return result;
 	}
 	void addString(string& s1, string& s2, int digit) {
-		// s2ÊÇÒ»Î»»òÁ½Î»Êý
+		// s2æ˜¯ä¸€ä½æˆ–ä¸¤ä½æ•°
 		if (s2.size() == 1) s2 = "0" + s2;
 		s1[digit] += s2[1] - '0';
 		s1[digit + 1] += s2[0] - '0';
-		// ½øÎ»
+		// è¿›ä½
 		if (s1[digit] > '9') {
 			s1[digit] -= 10;
 			s1[digit + 1]++;

@@ -18,7 +18,7 @@ public:
 		set<int> s;
 		for (int i = begin; i < n; i++)
 		{
-			//// ²»ÄÜÊ¹ÓÃ¸Ã¼ôÖ¦µÄÔ­Òò£ºswapÒÑ¾­ÆÆ»µÁËË³Ðò
+			//// ä¸èƒ½ä½¿ç”¨è¯¥å‰ªæžçš„åŽŸå› ï¼šswapå·²ç»ç ´åäº†é¡ºåº
 			//if (i > begin && nums[i] == nums[i - 1])
 			//	continue;
 			if (addValueForSet(s, nums[i]))

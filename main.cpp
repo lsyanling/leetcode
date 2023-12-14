@@ -6,76 +6,76 @@ using namespace std;
 
 int main() {
 
-	//// 10ÕıÔò±í´ïÊ½Æ¥Åä
+	//// 10æ­£åˆ™è¡¨è¾¾å¼åŒ¹é…
 	//{
 	//	Solution10 solution;
 	//	string s = { "mississippi" };
 	//	string p{ "mis*is*ip*." };
 	//	auto result = solution.isMatch(s, p);
-	//	println("10ÕıÔò±í´ïÊ½Æ¥Åä result = {0}", result);
+	//	println("10æ­£åˆ™è¡¨è¾¾å¼åŒ¹é… result = {0}", result);
 	//}
 
-	//// 29Á½ÊıÏà³ı
+	//// 29ä¸¤æ•°ç›¸é™¤
 	//{
 	//	Solution29 solution;
 	//	int dividend = 2147483647;
 	//	int divisor = 3;
 	//	auto result = solution.divide(dividend, divisor);
-	//	println("29Á½ÊıÏà³ı result = {0}", result);
+	//	println("29ä¸¤æ•°ç›¸é™¤ result = {0}", result);
 	//}
 
-	//// 30´®ÁªËùÓĞµ¥´ÊµÄ×Ó´®
+	//// 30ä¸²è”æ‰€æœ‰å•è¯çš„å­ä¸²
 	//{
 	//	Solution30 solution;
 	//	string s{ "wordgoodgoodgoodbestword" };
 	//	vector<string> words{ "word","good","best","good" };
 	//	auto results = solution.findSubstring(s, words);
-	//	println("30´®ÁªËùÓĞµ¥´ÊµÄ×Ó´® result.size() = {0}", results.size());
+	//	println("30ä¸²è”æ‰€æœ‰å•è¯çš„å­ä¸² result.size() = {0}", results.size());
 	//	for (const auto& result : results)
 	//		print("{0} ", result);
 	//	println("");
 	//}
 
-	//// 33ËÑË÷Ğı×ªÅÅĞòÊı×é
+	//// 33æœç´¢æ—‹è½¬æ’åºæ•°ç»„
 	//{
 	//	Solution33 solution;
 	//	vector<int> nums{ 4,5,6,7,0,1,2 };
 	//	int target = 0;
 	//	auto result = solution.search(nums, target);
-	//	println("33ËÑË÷Ğı×ªÅÅĞòÊı×é result = {0}", result);
+	//	println("33æœç´¢æ—‹è½¬æ’åºæ•°ç»„ result = {0}", result);
 	//}
 
-	// 37½âÊı¶À
-	{
-		Solution37 solution;
-		vector<vector<char>> board
-		{
-			{'5','3','.','.','7','.','.','.','.'},
-			{'6','.','.','1','9','5','.','.','.'},
-			{'.','9','8','.','.','.','.','6','.'},
-			{'8','.','.','.','6','.','.','.','3'},
-			{'4','.','.','8','.','3','.','.','1'},
-			{'7','.','.','.','2','.','.','.','6'},
-			{'.','6','.','.','.','.','2','8','.'},
-			{'.','.','.','4','1','9','.','.','5'},
-			{'.','.','.','.','8','.','.','7','9'}
-		};
-		solution.solveSudoku(board);
-		println("37½âÊı¶À");
-		for (const auto& row : board) {
-			for (const auto& item : row)
-				print("{0} ", item);
-			println("");
-		}
-	}
+	//// 37è§£æ•°ç‹¬
+	//{
+	//	Solution37 solution;
+	//	vector<vector<char>> board
+	//	{
+	//		{'5','3','.','.','7','.','.','.','.'},
+	//		{'6','.','.','1','9','5','.','.','.'},
+	//		{'.','9','8','.','.','.','.','6','.'},
+	//		{'8','.','.','.','6','.','.','.','3'},
+	//		{'4','.','.','8','.','3','.','.','1'},
+	//		{'7','.','.','.','2','.','.','.','6'},
+	//		{'.','6','.','.','.','.','2','8','.'},
+	//		{'.','.','.','4','1','9','.','.','5'},
+	//		{'.','.','.','.','8','.','.','7','9'}
+	//	};
+	//	solution.solveSudoku(board);
+	//	println("37è§£æ•°ç‹¬");
+	//	for (const auto& row : board) {
+	//		for (const auto& item : row)
+	//			print("{0} ", item);
+	//		println("");
+	//	}
+	//}
 
-	//// 39×éºÏ×ÜºÍ
+	//// 39ç»„åˆæ€»å’Œ
 	//{
 	//	Solution39 solution;
 	//	vector<int> nums{ 2,3,6,7 };
 	//	int target = 7;
 	//	auto results = solution.combinationSum(nums, target);
-	//	println("39×éºÏ×ÜºÍ result.size() = {0}", results.size());
+	//	println("39ç»„åˆæ€»å’Œ result.size() = {0}", results.size());
 	//	for (const auto& result : results) {
 	//		for (const auto& factor : result)
 	//			print("{0} ", factor);
@@ -83,13 +83,13 @@ int main() {
 	//	}
 	//}
 
-	//// 40×éºÏ×ÜºÍII
+	//// 40ç»„åˆæ€»å’ŒII
 	//{
 	//	Solution40 solution;
 	//	vector<int> nums{ 2,5,2,1,2 };
 	//	int target = 5;
 	//	auto results = solution.combinationSum2(nums, target);
-	//	println("40×éºÏ×ÜºÍII result.size() = {0}", results.size());
+	//	println("40ç»„åˆæ€»å’ŒII result.size() = {0}", results.size());
 	//	for (const auto& result : results) {
 	//		for (const auto& factor : result)
 	//			print("{0} ", factor);
@@ -97,46 +97,46 @@ int main() {
 	//	}
 	//}
 
-	//// 41È±Ê§µÄµÚÒ»¸öÕıÊı
+	//// 41ç¼ºå¤±çš„ç¬¬ä¸€ä¸ªæ­£æ•°
 	//{
 	//	Solution41 solution;
 	//	vector<int> nums{ 1 };
 	//	auto result = solution.firstMissingPositive(nums);
-	//	println("41È±Ê§µÄµÚÒ»¸öÕıÊı result = {0}", result);
+	//	println("41ç¼ºå¤±çš„ç¬¬ä¸€ä¸ªæ­£æ•° result = {0}", result);
 	//}
 
-	//// 42½ÓÓêË®
+	//// 42æ¥é›¨æ°´
 	//{
 	//	Solution42 solution;
 	//	vector<int> height{ 0,1,0,2,1,0,1,3,2,1,2,1 };
 	//	auto result = solution.trap(height);
-	//	println("42½ÓÓêË® result = {0}", result);
+	//	println("42æ¥é›¨æ°´ result = {0}", result);
 	//}
 
-	//// 43×Ö·û´®Ïà³Ë
+	//// 43å­—ç¬¦ä¸²ç›¸ä¹˜
 	//{
 	//	Solution43 solution;
 	//	string num1{ "123" };
 	//	string num2{ "456" };
 	//	auto result = solution.multiply(num1, num2);
-	//	println("43×Ö·û´®Ïà³Ë result = {0}", result);
+	//	println("43å­—ç¬¦ä¸²ç›¸ä¹˜ result = {0}", result);
 	//}
 
-	//// 44Í¨Åä·ûÆ¥Åä
+	//// 44é€šé…ç¬¦åŒ¹é…
 	//{
 	//	Solution44 solution;
 	//	string s{ "" };
 	//	string p{ "******" };
 	//	auto result = solution.isMatch(s, p);
-	//	println("44Í¨Åä·ûÆ¥Åä result = {0}", result);
+	//	println("44é€šé…ç¬¦åŒ¹é… result = {0}", result);
 	//}
 
-	//// 46È«ÅÅÁĞ
+	//// 46å…¨æ’åˆ—
 	//{
 	//	Solution46 solution;
 	//  vector<int> nums{ 1,2,3 };
 	//	auto results = solution.permute(nums);
-	//	println("46È«ÅÅÁĞ result.size() = {0}", results.size());
+	//	println("46å…¨æ’åˆ— result.size() = {0}", results.size());
 	//	for (const auto& result : results) {
 	//		for (const auto& i : result)
 	//			print("{0} ", i);
@@ -144,12 +144,12 @@ int main() {
 	//	}
 	//}
 
-	//// 47È«ÅÅÁĞII
+	//// 47å…¨æ’åˆ—II
 	//{
 	//	Solution47 solution;
 	//	vector<int> nums{ 0,1,0,0,9 };
 	//	auto results = solution.permuteUnique(nums);
-	//	println("47È«ÅÅÁĞII result.size() = {0}", results.size());
+	//	println("47å…¨æ’åˆ—II result.size() = {0}", results.size());
 	//	for (const auto& result : results) {
 	//		for (const auto& i : result)
 	//			print("{0} ", i);
@@ -157,21 +157,56 @@ int main() {
 	//	}
 	//}
 
-	//// 100031¼ÆËãKÖÃÎ»ÏÂ±ê¶ÔÓ¦ÔªËØµÄºÍ
+	//// 48æ—‹è½¬å›¾åƒ
+	//{
+	//	Solution48 solution;
+	//	vector<vector<int>> matrix{ {1,2,3},{4,5,6},{7,8,9} };
+	//	solution.rotate(matrix);
+	//	println("48æ—‹è½¬å›¾åƒ");
+	//	for (const auto& row : matrix) {
+	//		for (const auto& i : row)
+	//			print("{0} ", i);
+	//		println("");
+	//	}
+	//}
+
+	//// 49å­—æ¯å¼‚ä½è¯åˆ†ç»„
+	//{
+	//	Solution49 solution;
+	//	vector<string> strs{ "eat", "tea", "tan", "ate", "nat", "bat" };
+	//	auto results = solution.groupAnagrams(strs);
+	//	println("49å­—æ¯å¼‚ä½è¯åˆ†ç»„ result.size() = {0}", results.size());
+	//	for (const auto& result : results) {
+	//		for (const auto& str : result)
+	//			print("{0} ", str);
+	//		println("");
+	//	}
+	//}
+
+	//// 50Pow(x, n)
+	//{
+	//	Solution50 solution;
+	//	double x = 2.0;
+	//	int n = 10;
+	//	auto result = solution.myPow(x, n);
+	//	println("50Pow(x, n) result = {0}", result);
+	//}
+
+	//// 100031è®¡ç®—Kç½®ä½ä¸‹æ ‡å¯¹åº”å…ƒç´ çš„å’Œ
 	//{
 	//	Solution100031 solution;
 	//	vector<int> nums{ 4,3,2,1 };
 	//	int k = 2;
 	//	auto result = solution.sumIndicesWithKSetBits(nums, k);
-	//	println("100031¼ÆËãKÖÃÎ»ÏÂ±ê¶ÔÓ¦ÔªËØµÄºÍ result = {0}", result);
+	//	println("100031è®¡ç®—Kç½®ä½ä¸‹æ ‡å¯¹åº”å…ƒç´ çš„å’Œ result = {0}", result);
 	//}
 
-	//// 100040ÈÃËùÓĞÑ§Éú±£³Ö¿ªĞÄµÄ·Ö×é·½·¨Êı
+	//// 100040è®©æ‰€æœ‰å­¦ç”Ÿä¿æŒå¼€å¿ƒçš„åˆ†ç»„æ–¹æ³•æ•°
 	//{
 	//	Solution100040 solution;
 	//	vector<int> nums{ 1,1,0,1 };
 	//	auto result = solution.countWays(nums);
-	//	println("100040ÈÃËùÓĞÑ§Éú±£³Ö¿ªĞÄµÄ·Ö×é·½·¨Êı result = {0}", result);
+	//	println("100040è®©æ‰€æœ‰å­¦ç”Ÿä¿æŒå¼€å¿ƒçš„åˆ†ç»„æ–¹æ³•æ•° result = {0}", result);
 	//}
 
 }

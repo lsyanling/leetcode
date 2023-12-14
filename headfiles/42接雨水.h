@@ -13,8 +13,8 @@ public:
 		int result = 0;
 		while (left < right)
 		{
-			// ÓÉÓÚheight[left] < height[right]£¬Ôò±ØÓĞleftMax < rightMax
-			// ÒòÎªµÍµÄÄÇ±ßÒÆ¶¯
+			// ç”±äºheight[left] < height[right]ï¼Œåˆ™å¿…æœ‰leftMax < rightMax
+			// å› ä¸ºä½çš„é‚£è¾¹ç§»åŠ¨
 			if (height[left] < height[right]) {
 				if (height[left] < leftMax)
 					result += leftMax - height[left];
@@ -33,11 +33,11 @@ public:
 		return result;
 	}
 
-	// ntĞ´·¨
+	// ntå†™æ³•
 	//int trap(vector<int>& height) {
 	//	int n = height.size();
 	//	int left = 0, right = n - 1;
-	//	// Á½¶Ë´óÓÚ0µÄÆğÊ¼Î»ÖÃ
+	//	// ä¸¤ç«¯å¤§äº0çš„èµ·å§‹ä½ç½®
 	//	while (left < n && height[left] == 0)
 	//		left++;
 	//	while (right >= 0 && height[right] == 0)
@@ -45,31 +45,31 @@ public:
 	//	if (right - left - 1 <= 0)
 	//		return 0;
 	//	int minHeight = 0, previousMinHeight = 0, length, difference;
-	//	// ¸ù¾İminHeightµÃµ½previousHeightºÍµ±Ç°µÄsum£¬minHeightÊÇÎ¨Ò»µÄ
+	//	// æ ¹æ®minHeightå¾—åˆ°previousHeightå’Œå½“å‰çš„sumï¼ŒminHeightæ˜¯å”¯ä¸€çš„
 	//	map<int, tuple<int, int>> m;
 	//	while (left < right)
 	//	{
-	//		// Èç¹û×îµÍ¸ß¶È±ÈÖ®Ç°»¹µÍ£¬²»¸Ä±ä
+	//		// å¦‚æœæœ€ä½é«˜åº¦æ¯”ä¹‹å‰è¿˜ä½ï¼Œä¸æ”¹å˜
 	//		if (minHeight > previousMinHeight)
 	//			previousMinHeight = minHeight;
 	//		length = right - left - 1;
 	//		minHeight = min(height[left], height[right]);
-	//		// Èç¹ûleft > 0 && right > 0
+	//		// å¦‚æœleft > 0 && right > 0
 	//		if (minHeight) {
-	//			// ¼õÈ¥µ±Ç°¸ß¶ÈÕ¼ÓÃ¸üµÍ¸ß¶ÈµÄÃæ»ı
+	//			// å‡å»å½“å‰é«˜åº¦å ç”¨æ›´ä½é«˜åº¦çš„é¢ç§¯
 	//			for (auto& [h, value] : m)
 	//			{
 	//				// previousHeight, sum
 	//				auto& [prev, s] = value;
-	//				// µ±Ç°¸ß¶È²î
+	//				// å½“å‰é«˜åº¦å·®
 	//				int diff = minHeight - prev;
-	//				// ¸ß¶È²î´óÓÚÔ­×îµÍ¸ß¶È£¬¼õÈ¥Õ¼¾İµÄÃæ»ı
+	//				// é«˜åº¦å·®å¤§äºåŸæœ€ä½é«˜åº¦ï¼Œå‡å»å æ®çš„é¢ç§¯
 	//				if (diff > 0)
 	//					s -= minHeight < h ? diff : h - prev;
 	//			}
 	//			if (minHeight > previousMinHeight)
 	//			{
-	//				// µ±Ç°¸ß¶ÈÏÂ£¬¸ß¶È²î´øÀ´µÄ×ÜÃæ»ı
+	//				// å½“å‰é«˜åº¦ä¸‹ï¼Œé«˜åº¦å·®å¸¦æ¥çš„æ€»é¢ç§¯
 	//				difference = minHeight - previousMinHeight;
 	//				int sum = length * difference;
 	//				m[minHeight] = { previousMinHeight, sum };

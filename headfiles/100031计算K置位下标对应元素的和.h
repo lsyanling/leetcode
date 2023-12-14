@@ -7,7 +7,7 @@ using namespace std;
 class Solution100031 {
 public:
 	int sumIndicesWithKSetBits(vector<int>& nums, int k) {
-		// ²é±í£¬ÌâÄ¿Ìõ¼ş×î¶à1000¸ö
+		// æŸ¥è¡¨ï¼Œé¢˜ç›®æ¡ä»¶æœ€å¤š1000ä¸ª
 		vector allSetBits(1001, 0);
 		for (int i = 0; i < allSetBits.size(); i++)
 		{

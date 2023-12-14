@@ -108,6 +108,7 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <EnableModules>true</EnableModules>
       <BuildStlModules>true</BuildStlModules>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +136,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headfiles\48旋转图像.h" />
     <ClInclude Include="headfiles\37解数独.h" />
     <ClInclude Include="headfiles\47全排列II.h" />
     <ClInclude Include="headfiles\100040让所有学生保持开心的分组方法数.h" />
@@ -150,6 +152,8 @@
     <ClInclude Include="headfiles\30串联所有单词的子串.h" />
     <ClInclude Include="headfiles\head.h" />
     <ClInclude Include="headfiles\29两数相除.h" />
+    <ClInclude Include="headfiles\49字母异位词分组.h" />
+    <ClInclude Include="headfiles\50Pow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,24 +12,24 @@ public:
 	}
 	vector<vector<int>> combinationSum2Recursive(vector<int>& candidates, int target, int begin) {
 		vector<vector<int>> results;
-		// ²éÕÒÍê±Ï»ò²»¿ÉÄÜÓĞ½â
+		// æŸ¥æ‰¾å®Œæ¯•æˆ–ä¸å¯èƒ½æœ‰è§£
 		if (begin >= candidates.size() || target < candidates[begin])
 			return {};
 		for (int i = begin; i < candidates.size(); i++)
 		{
-			// ¼ôÖ¦£¬ºòÑ¡Êı×éÖĞÁ¬ĞøÁ½¸öÖµÏàÍ¬£¬ÔÚÉÏÒ»²ã²é¹ıÁË
+			// å‰ªæï¼Œå€™é€‰æ•°ç»„ä¸­è¿ç»­ä¸¤ä¸ªå€¼ç›¸åŒï¼Œåœ¨ä¸Šä¸€å±‚æŸ¥è¿‡äº†
 			if (i > begin && candidates[i] == candidates[i - 1])
 				continue;
-			// µÃµ½½â
+			// å¾—åˆ°è§£
 			if (target == candidates[i]) {
 				results.push_back({ candidates[i] });
 				continue;
 			}
-			// µİ¹é£¬Ã¿¸ö½âÖĞ²åÈëµ±Ç°Ñ¡ÖĞµÄÖµ
+			// é€’å½’ï¼Œæ¯ä¸ªè§£ä¸­æ’å…¥å½“å‰é€‰ä¸­çš„å€¼
 			auto tempResults = combinationSum2Recursive(candidates, target - candidates[i], i + 1);
 			for (auto& tempResult : tempResults)
 				tempResult.push_back(candidates[i]);
-			// ½«½âºÏ²¢µ½results
+			// å°†è§£åˆå¹¶åˆ°results
 			results.insert(results.end(), tempResults.begin(), tempResults.end());
 		}
 		return results;

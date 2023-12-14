@@ -24,17 +24,17 @@ public:
 			divisor = -divisor;
 			signReversal = !signReversal;
 		}
-		// ±»³ıÊıÎª0»ò±»³ıÊı(¸º)´óÓÚ³ıÊı(¸º)£¬ÉÌÎª0
+		// è¢«é™¤æ•°ä¸º0æˆ–è¢«é™¤æ•°(è´Ÿ)å¤§äºé™¤æ•°(è´Ÿ)ï¼Œå•†ä¸º0
 		if (dividend == 0 || dividend > divisor)
 		{
 			return 0;
 		}
 
-		// ÉÌ²»Îª0µÄÇé¿ö
+		// å•†ä¸ä¸º0çš„æƒ…å†µ
 		int quotient = 0;
 		for (int times = -1, tempDividend = dividend, tempDivisor = divisor; tempDividend <= tempDivisor;)
 		{
-			// ±£´æ³¬³öÁÙÊ±±»³ıÊı£¨»ò×îĞ¡ÕûÊıµÄÒ»°ë£©Ö®Ç°µÄÁÙÊ±³ıÊı
+			// ä¿å­˜è¶…å‡ºä¸´æ—¶è¢«é™¤æ•°ï¼ˆæˆ–æœ€å°æ•´æ•°çš„ä¸€åŠï¼‰ä¹‹å‰çš„ä¸´æ—¶é™¤æ•°
 			int previousDivisor = tempDivisor;
 			while (tempDivisor > intMinHalf && tempDividend < tempDivisor)
 			{
@@ -50,7 +50,7 @@ public:
 			tempDividend -= previousDivisor;
 			tempDivisor = divisor;
 		}
-		// ±äºÅËµÃ÷ÒìºÅ£¬Ö±½Ó·µ»Ø
+		// å˜å·è¯´æ˜å¼‚å·ï¼Œç›´æ¥è¿”å›
 		if (signReversal)
 		{
 			return quotient;

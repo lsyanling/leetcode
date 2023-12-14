@@ -19,47 +19,47 @@ public:
 		map<string, int> solution;
 		vector<string> nowBeginWords(wordSize);
 
-		// ±ê×¼´ğ°¸
+		// æ ‡å‡†ç­”æ¡ˆ
 		for (const auto& word : words)
 			addValueForMap(solution, word);
 
-		// ³õÊ¼»¯»¬¶¯´°¿Ú£¬i±íÊ¾µÚi¸ö´°¿Ú£¬j±íÊ¾¸Ã´°¿ÚµÄµÚj¸öµ¥´Ê
+		// åˆå§‹åŒ–æ»‘åŠ¨çª—å£ï¼Œiè¡¨ç¤ºç¬¬iä¸ªçª—å£ï¼Œjè¡¨ç¤ºè¯¥çª—å£çš„ç¬¬jä¸ªå•è¯
 		for (int i = 0; i < wordSize; i++) {
 			for (int j = 0; j < wordsSize; j++) {
-				// »¬¶¯´°¿ÚÎ´µ½´ïsµÄÄ©Î²
+				// æ»‘åŠ¨çª—å£æœªåˆ°è¾¾sçš„æœ«å°¾
 				if (wordSize * (j + 1) + i <= sSize)
 				{
 					string word = s.substr(wordSize * j + i, wordSize);
 					if (solution.find(word) != solution.end()) {
 						addValueForMap(maps[i], word);
-						// »¬¶¯´°¿ÚÊ×µ¥´Ê
+						// æ»‘åŠ¨çª—å£é¦–å•è¯
 						if (j == 0)
 							nowBeginWords[i] = word;
 					}
 				}
 			}
-			// ½âºÍ´ğ°¸ÏàÍ¬
+			// è§£å’Œç­”æ¡ˆç›¸åŒ
 			if (maps[i] == solution)
 				result.push_back(i);
 		}
 
-		// »¬¶¯´°¿ÚÓÒÒÆ
+		// æ»‘åŠ¨çª—å£å³ç§»
 		for (int i = length; i <= sSize - wordSize; i++) {
 			string word = s.substr(i, wordSize);
 			string beginWord = nowBeginWords[i % wordSize];
-			// ´°¿ÚÄ©Î²ÊÇÒ»¸öµ¥´Ê
+			// çª—å£æœ«å°¾æ˜¯ä¸€ä¸ªå•è¯
 			if (solution.find(word) != solution.end())
 				addValueForMap(maps[i % wordSize], word);
-			// È¥µô´°¿ÚÊ×µ¥´Ê
+			// å»æ‰çª—å£é¦–å•è¯
 			if (nowBeginWords[i % wordSize] != "")
 				subValueForMap(maps[i % wordSize], nowBeginWords[i % wordSize]);
-			// ¸üĞÂ´°¿ÚÊ×µ¥´Ê
+			// æ›´æ–°çª—å£é¦–å•è¯
 			beginWord = s.substr(i - length + wordSize, wordSize);
 			if (solution.find(beginWord) != solution.end())
 				nowBeginWords[i % wordSize] = beginWord;
 			else
 				nowBeginWords[i % wordSize] = "";
-			// ½â
+			// è§£
 			if (maps[i % wordSize] == solution)
 				result.push_back(i - length + wordSize);
 		}

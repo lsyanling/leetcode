@@ -16,7 +16,7 @@ public:
 		int left = 0, right = n - 1, middle;
 		int result = -1;
 
-		// ²é×îĞ¡ÖµµÄË÷Òı
+		// æŸ¥æœ€å°å€¼çš„ç´¢å¼•
 		while (left < right)
 		{
 			middle = (left + right) / 2;
@@ -26,7 +26,7 @@ public:
 				right = middle;
 		}
 
-		// targetÔÚ×îĞ¡ÖµµÄÄÄ±ß
+		// targetåœ¨æœ€å°å€¼çš„å“ªè¾¹
 		int minIndex = (left + right) / 2;
 		left = 0, right = n - 1;
 		if (target > nums[n - 1])
@@ -34,7 +34,7 @@ public:
 		else
 			left = minIndex;
 
-		// ²étarget£¬2logÒ²ÊÇlog
+		// æŸ¥targetï¼Œ2logä¹Ÿæ˜¯log
 		while (left < right)
 		{
 			middle = (left + right) / 2;
@@ -57,14 +57,14 @@ public:
 			middle = (left + right) / 2;
 			if (nums[middle] == target)
 				return middle;
-			// ×ó±ßÂÒĞò£¬ÓÒ±ßË³Ğò
+			// å·¦è¾¹ä¹±åºï¼Œå³è¾¹é¡ºåº
 			if (nums[left] > nums[middle]) {
 				if (nums[middle] <= target && nums[right] >= target)
 					left = middle + 1;
 				else
 					right = middle;
 			}
-			// ÓÒ±ßÂÒĞò£¬×ó±ßË³Ğò
+			// å³è¾¹ä¹±åºï¼Œå·¦è¾¹é¡ºåº
 			else
 			{
 				if (nums[left] <= target && nums[middle] >= target)

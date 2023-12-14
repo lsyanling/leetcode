@@ -68,5 +68,14 @@
     <ClInclude Include="headfiles\37解数独.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="headfiles\48旋转图像.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headfiles\49字母异位词分组.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headfiles\50Pow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
