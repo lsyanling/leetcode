@@ -1,11 +1,11 @@
 
 #pragma once
 
-import std;
+#include "librarys.h"
 using namespace std;
 
 class Solution50 {
-public:
+  public:
     double myPow(double x, int n) {
         if (n == 0)
             return 1;

@@ -1,5 +1,13 @@
 # leetcode 题解
-## 使用 `Visual Studio 2022 Preview` 及 `C++23` 标准 (`C++ latest`)
+## 使用 `Windows` + `Cmake` + `llvm-mingw` 及 `C++2c` 标准 (`C++ latest`)
+
+### build
+
+```pwsh
+cd build
+cmake -G "MinGW Makefiles" ..
+cmake --build .
+```
 
 ### 目前更新如下
 
